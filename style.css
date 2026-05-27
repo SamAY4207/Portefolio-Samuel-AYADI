@@ -72,6 +72,10 @@
     width: 48%;
 }
 
+.w-45 {
+    width: 45%;
+}
+
 .w-40 {
     width: 40%;
 }
@@ -92,6 +96,10 @@
     width: 20%;
 }
 
+.w-15 {
+    width: 15%;
+}
+
 .w-10 {
     width: 10%;
 }
@@ -105,12 +113,22 @@
     flex-wrap: wrap;
 }
 
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .space-between {
     justify-content: space-between;
 }
 
 .justify-center {
     justify-content: center;
+}
+
+.justify-start {
+    justify-content: start;
 }
 
 .justify-end {
@@ -123,6 +141,9 @@
 
 .align-start {
     align-items: start;
+}
+.align-end {
+    align-items: end;
 }
 
 
@@ -159,6 +180,14 @@
 
 .mb-32 {
     margin-bottom: 32px;
+}
+
+.mt-64 {
+    margin-top: 64px;
+}
+
+.mb-64 {
+    margin-bottom: 64px;
 }
 
 .mt-128 {
@@ -243,33 +272,6 @@
 
 
 
-/* ------------------------------
-            Barres de progression
- ---------------------------------*/
-
-.progress-bar-PC {
-    height: 20px;
-    width: 25%;
-    color: #ffffff;
-    background-color: #493b3b;
-    border-radius: 2px;
-}
-
-.progress-bar-internet {
-    height: 20px;
-    width: 50%;
-    color: #ffffff;
-    background-color: #493b3b;
-    border-radius: 2px;
-}
-
-.progress-bar-jv {
-    height: 20px;
-    width: 100%;
-    color: #ffffff;
-    background-color: #493b3b;
-    border-radius: 2px;
-}
 
 
 
@@ -283,6 +285,10 @@ a {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
+  text-decoration: none;
+  color: currentColor;
+  
 }
 
 p {
@@ -290,6 +296,8 @@ p {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
+  
 }
 
 ol {
@@ -297,6 +305,9 @@ ol {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
+  list-style: none; 
+  
 }
 
 ul {
@@ -304,6 +315,8 @@ ul {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
+  list-style: none;
 }
 
 li {
@@ -311,34 +324,178 @@ li {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 }
 
 h1 {
     font-family: "Lobster", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
+  font-size: 60px;
 }
 
 h2 {
     font-family: "Baumans", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 48px;
 }
 
 h3 {
     font-family: "Baumans", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 36px;
 }
 
 h4 {
     font-family: "Baumans", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 28px;
 }
 
 h5 {
     font-family: "Baumans", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 24px;
+}
+
+
+/* ------------------------------
+            Barres de progression
+ ---------------------------------*/
+
+.progress-bar {
+    
+    color: #D800A6;
+    background-color: #76D9D8   ;
+    border-radius: 2px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+}
+
+
+
+
+ /* ------------------------------
+            Backgrounds
+ ---------------------------------*/
+ .bg-blue{
+    background-color: #31E1F7;
+ }
+
+ .bg-purple{
+    background-color: #FF7777;
+ }
+
+
+.bg-beige {
+    background-color: #ffe4bf;
+}
+
+/* ------------------------------
+            Couleurs
+ ---------------------------------*/
+/* Palette de couleurs 
+Purple Haze : #4B3597
+
+Blue Oasis : #297597
+
+Amazonite : #76D9D8
+
+Silky Smooth : #FEE6CA
+
+Sea Nettle : #EC7E4B
+
+Periphylla : #D800A6
+*/
+
+.card-1{
+    background-color: #4B3597;
+    border-radius: 15px;
+    padding: 16px;
+    color: #FEE6CA;
+}
+
+.card-2{
+    background-color: #297597;
+    border-radius: 15px;
+    padding: 16px;
+    color: #FEE6CA;
+}
+
+.card-3{
+    background-color: #76D9D8;
+    border-radius: 15px;
+    padding: 16px;
+    color: #D800A6;
+}
+
+.card-4{
+    background-color: #fff8f1;
+    border-radius: 15px;
+    padding: 16px;
+    color: #4B3597;
+}
+
+.card-5{
+    background-color: #EC7E4B;
+    border-radius: 15px;
+    padding: 16px;
+    color: #FEE6CA;
+}
+
+.card-6{
+    background-color: #D800A6;
+    border-radius: 15px;
+    padding: 16px;
+    color: #FEE6CA;
+}
+
+.cardl-d1 {
+    background-color: #77E9E6;
+    border-radius: 15px 0 0 15px;
+    padding: 16px;
+    color: #D800A6;
+    fit-content: true;
+}
+
+.cardr-d1 {
+    background-color: #D800A6;
+    border-radius: 0 15px 15px 0;
+    padding: 16px;
+    color: #ffe4bf;
+}
+
+.cardb-d1 {
+    background-color: #287596;
+    border-radius: 0px 0px 15px 15px;
+    padding: 16px;
+    color: #ffe4bf;
+}
+
+.cardb-d2 {
+    background-color: #4B3596;
+    border-radius: 0px 0px 15px 15px;
+    padding: 16px;
+    color: #ffe4bf;
+}
+
+.radius-15l {
+    border-radius: 15px 0px 0px 15px;
+}
+
+.radius-15r {
+    border-radius: 0px 15px 15px 0px;
+}
+
+.radius-15t {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.radius-15b {
+    border-radius: 0px 0px 15px 15px;
 }
